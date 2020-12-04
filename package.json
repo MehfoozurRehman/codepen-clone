@@ -2,10 +2,10 @@
   "name": "codepen",
   "version": "0.1.0",
   "private": true,
-  "description": "<your project description>",
-  "author": "<author of app>",
+  "description": "Codepen text editor clone",
+  "author": "Mehfooz-ur-Rehman",
   "build": {
-    "appId": "<com.your_app>"
+    "appId": "com.codepen"
   },
   "main": "src/electron.js",
   "homepage": "./",

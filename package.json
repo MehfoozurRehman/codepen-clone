@@ -2,11 +2,20 @@
   "name": "codepen",
   "version": "0.1.0",
   "private": true,
+  "description": "<your project description>",
+  "author": "<author of app>",
+  "build": {
+    "appId": "<com.your_app>"
+  },
+  "main": "src/electron.js",
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "codemirror": "^5.58.3",
+    "cross-env": "^7.0.3",
+    "electron-is-dev": "^1.2.0",
     "react": "^17.0.1",
     "react-codemirror2": "^7.2.1",
     "react-dom": "^17.0.1",
@@ -14,10 +23,14 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test --env=jsdom",
+    "react-eject": "react-scripts eject",
+    "electron-build": "electron-builder",
+    "release": "yarn react-build && electron-builder --publish=always",
+    "build": "yarn react-build && yarn electron-build",
+    "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\""
   },
   "eslintConfig": {
     "extends": [
@@ -36,5 +49,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "electron": "^11.0.3",
+    "electron-builder": "^22.9.1",
+    "wait-on": "^5.2.0"
   }
 }

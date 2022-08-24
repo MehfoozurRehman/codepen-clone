@@ -1,3 +1,13 @@
+html {
+  --bg: hsl(225, 6%, 25%);
+  --bg-panel: hsl(225, 6%, 13%);
+  --color-text: white;
+}
+html[data-theme="dark"] {
+  --bg: rgb(230, 230, 230);
+  --bg-panel: white;
+  --color-text: hsl(225, 6%, 13%);
+}
 body {
   margin: 0;
 }

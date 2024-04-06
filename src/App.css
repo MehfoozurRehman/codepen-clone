@@ -47,7 +47,7 @@ body {
   flex-direction: column;
   padding: 0.5rem;
   background-color: var(--bg);
-  box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.2);
+  box-shadow: 0 3px 6px rgb(0, 0, 0, 0.2);
 }
 .editor-container.collapsed {
   flex-grow: 0;
@@ -80,13 +80,11 @@ button {
   outline: none;
   margin-left: 1em;
 }
-
 input[type="checkbox"] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
-
 label {
   cursor: pointer;
   text-indent: -9999px;
@@ -97,7 +95,6 @@ label {
   border-radius: 100px;
   position: relative;
 }
-
 label:after {
   content: "";
   position: absolute;
@@ -109,20 +106,16 @@ label:after {
   border-radius: 90px;
   transition: 0.1s;
 }
-
 input:checked + label {
   background: var(--bg-panel);
 }
-
 input:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }
-
 label:active:after {
   width: 45px;
 }
-
 html.transition,
 html.transition *,
 html.transition *:before,

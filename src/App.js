@@ -10,6 +10,7 @@ function App() {
   const [css, setCss] = useLocalStorage("css", "");
   const [js, setJs] = useLocalStorage("js", "");
   const [srcDoc, setSrcDoc] = useState("");
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       setSrcDoc(`

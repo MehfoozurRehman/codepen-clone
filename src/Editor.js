@@ -13,7 +13,7 @@ export default function Editor(props) {
   const { language, displayName, value, onChange } = props;
   const [open, setOpen] = useState(true);
 
-  function handleChange(editor, data, value) {
+  function handleChange(_editor, _data, value) {
     onChange(value);
   }
 
@@ -21,11 +21,7 @@ export default function Editor(props) {
     <div className={`editor-container ${open ? "" : "collapsed"}`}>
       <div className="editor-title">
         {displayName}
-        <button
-          onClick={() => {
-            setOpen((prevOpen) => !prevOpen);
-          }}
-        >
+        <button onClick={() => setOpen((prevOpen) => !prevOpen)}>
           <img src={open ? CompressedAlt : ExpandAlt} />
         </button>
       </div>

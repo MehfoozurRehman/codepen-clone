@@ -1,0 +1,5 @@
+onlyBuiltDependencies:
+  - core-js
+  - ejs
+  - electron
+  - es5-ext

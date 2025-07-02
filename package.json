@@ -8,7 +8,7 @@
   "build": {
     "appId": "com.codepen"
   },
-  "main": "dist-electron/main.js",
+  "main": "electron.js",
   "homepage": "./",
   "dependencies": {
     "@codemirror/lang-css": "^6.3.1",

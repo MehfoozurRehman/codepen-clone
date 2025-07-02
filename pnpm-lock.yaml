@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       codemirror:
-        specifier: ^5.65.18
-        version: 5.65.18
+        specifier: ^5.65.19
+        version: 5.65.19
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -21,8 +21,8 @@ importers:
         specifier: ^17.0.2
         version: 17.0.2
       react-codemirror2:
-        specifier: ^7.2.1
-        version: 7.3.0(codemirror@5.65.18)(react@17.0.2)
+        specifier: ^7.3.0
+        version: 7.3.0(codemirror@5.65.19)(react@17.0.2)
       react-compress:
         specifier: ^3.6.4
         version: 3.6.4
@@ -37,7 +37,7 @@ importers:
         specifier: ^5.3.0
         version: 5.3.0
       electron:
-        specifier: ^20.1.4
+        specifier: ^20.3.12
         version: 20.3.12
       electron-builder:
         specifier: ^22.14.13
@@ -2019,8 +2019,8 @@ packages:
     resolution: {integrity: sha512-q5/jG+YQnSy4nRTV4F7lPepBJZ8qBNJJDBuJdoejDyLXgmL7IEo+Le2JDZudFTFt7mrCqIRaSjws4ygRCTCAXA==}
     engines: {node: '>= 4.0'}
 
-  codemirror@5.65.18:
-    resolution: {integrity: sha512-Gaz4gHnkbHMGgahNt3CA5HBk5lLQBqmD/pBgeB4kQU6OedZmqMBjlRF0LSrp2tJ4wlLNPm2FfaUd1pDy0mdlpA==}
+  codemirror@5.65.19:
+    resolution: {integrity: sha512-+aFkvqhaAVr1gferNMuN8vkTSrWIFvzlMV9I2KBLCWS2WpZ2+UAkZjlMZmEuT+gcXTi6RrGQCkWq1/bDtGqhIA==}
 
   collect-v8-coverage@1.0.2:
     resolution: {integrity: sha512-lHl4d5/ONEbLlJvaJNtsF/Lz+WvB07u2ycqTYbdrq7UypDXailES4valYb2eWiJFxZlVmpGekfqoxQhzyFdT4Q==}
@@ -4260,6 +4260,7 @@ packages:
 
   lodash.template@4.5.0:
     resolution: {integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==}
+    deprecated: This package is deprecated. Use https://socket.dev/npm/package/eta instead.
 
   lodash.templatesettings@4.2.0:
     resolution: {integrity: sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==}
@@ -8838,7 +8839,7 @@ snapshots:
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 16.18.121
+      '@types/node': 22.10.1
 
   '@types/minimatch@5.1.2': {}
 
@@ -8870,7 +8871,7 @@ snapshots:
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 16.18.121
+      '@types/node': 22.10.1
 
   '@types/source-list-map@0.1.6': {}
 
@@ -8912,7 +8913,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 16.18.121
+      '@types/node': 22.10.1
     optional: true
 
   '@typescript-eslint/eslint-plugin@4.33.0(@typescript-eslint/parser@4.33.0(eslint@7.32.0)(typescript@4.9.5))(eslint@7.32.0)(typescript@4.9.5)':
@@ -8986,7 +8987,7 @@ snapshots:
       glob: 7.2.3
       is-glob: 4.0.3
       lodash: 4.17.21
-      semver: 7.3.2
+      semver: 7.6.3
       tsutils: 3.21.0(typescript@4.9.5)
     optionalDependencies:
       typescript: 4.9.5
@@ -10089,7 +10090,7 @@ snapshots:
       chalk: 2.4.2
       q: 1.5.1
 
-  codemirror@5.65.18: {}
+  codemirror@5.65.19: {}
 
   collect-v8-coverage@1.0.2: {}
 
@@ -12546,7 +12547,11 @@ snapshots:
       pretty-format: 26.6.2
       throat: 5.0.0
     transitivePeerDependencies:
+      - bufferutil
+      - canvas
       - supports-color
+      - ts-node
+      - utf-8-validate
 
   jest-leak-detector@26.6.2:
     dependencies:
@@ -13286,7 +13291,7 @@ snapshots:
     dependencies:
       growly: 1.3.0
       is-wsl: 2.2.0
-      semver: 7.3.2
+      semver: 7.6.3
       shellwords: 0.1.1
       uuid: 8.3.2
       which: 2.0.2
@@ -14240,9 +14245,9 @@ snapshots:
       regenerator-runtime: 0.13.11
       whatwg-fetch: 3.6.20
 
-  react-codemirror2@7.3.0(codemirror@5.65.18)(react@17.0.2):
+  react-codemirror2@7.3.0(codemirror@5.65.19)(react@17.0.2):
     dependencies:
-      codemirror: 5.65.18
+      codemirror: 5.65.19
       react: 17.0.2
 
   react-compress@3.6.4:

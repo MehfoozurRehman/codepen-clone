@@ -1,7 +1,8 @@
-import { app, BrowserWindow } from "electron";
-import path from "path";
-import isDev from "electron-is-dev";
+import { BrowserWindow, app } from "electron";
+
 import { fileURLToPath } from "url";
+import isDev from "electron-is-dev";
+import path from "path";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

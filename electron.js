@@ -1,6 +1,10 @@
-const { app, BrowserWindow } = require("electron");
-const path = require("path");
-const isDev = require("electron-is-dev");
+import { app, BrowserWindow } from "electron";
+import path from "path";
+import isDev from "electron-is-dev";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 let mainWindow;
 
@@ -18,7 +22,7 @@ function createWindow() {
 
   const startUrl = isDev
     ? "http://localhost:5173"
-    : `file://${path.join(__dirname, "../dist/index.html")}`;
+    : `file://${path.join(__dirname, "./dist/index.html")}`;
 
   mainWindow.loadURL(startUrl);
 

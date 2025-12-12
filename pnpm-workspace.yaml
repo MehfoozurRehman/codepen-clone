@@ -3,3 +3,4 @@ onlyBuiltDependencies:
   - ejs
   - electron
   - es5-ext
+  - esbuild

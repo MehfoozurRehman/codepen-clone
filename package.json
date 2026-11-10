@@ -24,8 +24,8 @@
     "react-dom": "^18.3.1"
   },
   "scripts": {
-    "dev": "node init && vite",
-    "build": "node init && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview",
     "electron-dev": "concurrently \"cross-env BROWSER=none npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
     "electron-build": "npm run build && electron-builder",
